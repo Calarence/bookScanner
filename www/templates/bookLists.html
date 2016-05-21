@@ -1,0 +1,15 @@
+<ion-view view-title="书单">
+<ion-content>
+<button ng-click="selectAll()">查询</button>
+<!--  <ion-refresher pulling-text="下拉刷新" on-refresh="getLists()">
+</ion-refresher> -->
+<ion-list show-delete="false" can-swipe="true">
+<ion-item ng-repeat="booklist in bookLists" >
+<h2>{{booklist.title}} {{booklist.author}} {{booklist.publisher}} {{booklist.summary}}</h2>
+<a href="#/app/booklists/{{booklist.id}}">查看详细</a>
+
+<button ng-click="delete(booklist.id)">删除</button>
+</ion-item>
+</ion-list>
+</ion-content>
+</ion-view>

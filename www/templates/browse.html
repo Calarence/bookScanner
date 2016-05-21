@@ -1,0 +1,35 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">书籍信息</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="close()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="addBook()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">书籍名称</span>
+          <input type="text" ng-model="bookData.title">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">作者</span>
+          <input type="text" ng-model="bookData.author">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">出版社</span>
+          <input type="text" ng-model="bookData.publisher">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">概要</span>
+          <input type="text" ng-model="bookData.summary">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">增加</button>
+        </label>
+        
+      </div>
+    </form><label class="item">
+        <button class="button button-block button-positive" ng-click="reset()">撤销</button></label>
+  </ion-content>
+</ion-modal-view>

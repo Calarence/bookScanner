@@ -1,0 +1,25 @@
+<ion-view view-title="详细">
+    <ion-content>
+        <!-- <ion-refresher pulling-text="下拉刷新" on-refresh="getLists()">
+        </ion-refresher> -->
+        <div class="row">
+            <!-- <div class="col col-33">
+                <img ng-src="{{booklist.image}}" alt="{{booklist.summary}}"/><br/>
+            </div> -->
+            <div class="col col-67">
+                {{booklist.title}} <br/>
+                出版社: {{booklist.publisher}} <br/>
+                作者: {{booklist.author}} <br/>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <strong>简介</strong>:
+                <p>
+                    {{booklist.summary}}
+                </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
